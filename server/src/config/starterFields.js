@@ -1,0 +1,61 @@
+// Every new form starts with these fields. The admin can edit or remove any of them.
+module.exports = [
+  {
+    key: 'name',
+    label: 'Full name',
+    type: 'text',
+    placeholder: 'Enter your full name',
+    required: true,
+    minLength: 2,
+    maxLength: 100,
+  },
+  {
+    key: 'email',
+    label: 'Email',
+    type: 'email',
+    placeholder: 'name@company.com',
+    required: true,
+  },
+  {
+    key: 'gender',
+    label: 'Gender',
+    type: 'radio',
+    required: true,
+    options: ['Male', 'Female', 'Other'],
+  },
+  {
+    key: 'mobile',
+    label: 'Mobile number',
+    type: 'phone',
+    placeholder: '+91 98765 43210',
+    required: true,
+  },
+  {
+    key: 'description',
+    label: 'About you',
+    type: 'textarea',
+    placeholder: 'A few lines about your work',
+    maxLength: 1000,
+  },
+  {
+    key: 'department',
+    label: 'Department',
+    type: 'select',
+    required: true,
+    options: ['Engineering', 'Sales', 'Marketing', 'Finance', 'Human Resources', 'Operations'],
+  },
+  {
+    key: 'designation',
+    label: 'Designation',
+    type: 'text',
+    placeholder: 'e.g. Software Engineer',
+    maxLength: 100,
+  },
+  {
+    key: 'role',
+    label: 'Role',
+    type: 'select',
+    required: true,
+    options: ['Individual Contributor', 'Team Lead', 'Manager', 'Intern'],
+  },
+];

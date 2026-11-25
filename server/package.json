@@ -1,0 +1,27 @@
+{
+  "name": "form-builder-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API for the dynamic form builder",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/server.js",
+    "dev": "node --watch --env-file-if-exists=.env src/server.js",
+    "seed:admin": "node --env-file-if-exists=.env src/scripts/seedAdmin.js"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "xss": "^1.0.15",
+    "zod": "^3.24.1"
+  }
+}
